@@ -4,7 +4,7 @@ inputEl.addEventListener("blur", isInputValid);
 inputEl.addEventListener("focus", isFocus);
 
 function isInputValid(event) {
-  if (event.currentTarget.value.length >= inputEl.getAttribute("data-length")) {
+  if (event.currentTarget.value.length == inputEl.getAttribute("data-length")) {
     console.log(event.currentTarget.value.length);
     console.log(inputEl.getAttribute("data-length"));
 

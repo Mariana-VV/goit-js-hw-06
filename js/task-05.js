@@ -4,6 +4,15 @@ const spanEl = document.querySelector("#name-output");
 inputEl.addEventListener("input", onInputInput);
 
 function onInputInput(event) {
-  spanEl.textContent =
-    inputEl != null ? event.currentTarget.value : "Anonymous";
+  
+  spanEl.textContent = event.currentTarget.value ;
+  if(spanEl.textContent == ''){
+    spanEl.textContent = "Anonymous";
+  }
 }
+
+// inputEl.addEventListener('blur' , function () {
+//   if(spanEl.textContent == ''){
+//     spanEl.textContent = "Anonymous";
+//   }
+// });

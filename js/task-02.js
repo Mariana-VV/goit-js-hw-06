@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 const ingredientsEl = [];
- ingredients.forEach((ingredient)=>{
+ ingredients.map((ingredient)=>{
   const itemEl = document.createElement('li');
   itemEl.textContent = ingredient;
   itemEl.classList.add('.item');

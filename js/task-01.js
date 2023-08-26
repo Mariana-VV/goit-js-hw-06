@@ -1,9 +1,5 @@
 const count = (parameter) => {
-  let counter = 0;
-  parameter.forEach((item) => {
-    counter++;
-  });
-  return  counter;
+  return  parameter.length;
 };
 
 const countElements = (parameter) => {
@@ -14,5 +10,8 @@ const countElements = (parameter) => {
 };
 
 const element = document.querySelectorAll(".item");
-console.log("Number of categories:" +count(element));
+console.log("Number of categories:" + count(element));
 countElements(element);
+
+
+

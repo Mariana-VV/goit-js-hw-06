@@ -16,9 +16,7 @@ const images = [
 
 const galleryEl = document.querySelector('.gallery');
 
-const imagesEl = [];
-images.forEach((image)=>{
-imagesEl.push('<li><img class="picture" src='+`${image.url}`+'alt='+`${image.alt}`+'/></li>')
+images.map((image)=>{
+  galleryEl.innerHTML += ('<li><img class="picture" src=' +`${image.url}`+' alt= "'+`${image.alt}`+'"'+'/></li>');
 });
 
-galleryEl.insertAdjacentHTML('afterbegin',imagesEl);
