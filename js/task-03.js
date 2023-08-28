@@ -17,6 +17,6 @@ const images = [
 const galleryEl = document.querySelector('.gallery');
 
 images.map((image)=>{
-  galleryEl.innerHTML += ('<li><img class="picture" src=' +`${image.url}`+' alt= "'+`${image.alt}`+'"'+'/></li>');
+  galleryEl.insertAdjacentHTML('afterbegin','<li><img class="picture" src=' +`${image.url}`+' alt= "'+`${image.alt}`+'"'+'/></li>');
 });
 

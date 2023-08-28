@@ -11,6 +11,7 @@ function onFormSubmit(event) {
 
   if (email === "" || password === "") {
     alert("Please fill in all the fields!");
+    return;
   }
 
   const person = {
